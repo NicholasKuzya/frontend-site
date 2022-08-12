@@ -1,0 +1,52 @@
+.banner {
+	.row {
+		align-items: center;
+	}
+	// .banner__content
+	&__content {
+		padding-top: 30px;
+	}
+	// .banner__title
+	&__title {
+		font-family: $ms;
+		color: $sites;
+		padding-right: 25px;
+		
+		span {
+			color: $bl-300;
+			font-size: 22px;
+		}
+		h1 {
+			font-size: 52px;
+			line-height: 59px;
+			color: $orange;
+			text-transform: uppercase;
+			font-family: $me;
+			font-style: italic;
+		}
+		p {
+			font-size: 20px;
+			margin-top: 30px;
+		}
+	}
+	// .banner__link
+	&__link {
+		background-color: $bl-500;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+		max-width: 30%;
+		height: 40px;
+		padding: 10px 20px;
+		border-radius: 2px;
+		text-decoration: none;
+		color: $white;
+		margin-top: 50px;
+	}
+	// .banner__image 
+	&__image {
+		border-radius: 15px;
+		display: inline-block;
+	}
+}

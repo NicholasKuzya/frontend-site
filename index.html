@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Academy | Frontend</title>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav class="navbar">
+				<div class="navbar__logo">
+					Frontend Академия
+				</div>
+				<ul class="nav">
+					<li class="nav__item">
+						<a href="#" class="nav__link">О нас</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Школам</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">
+							<i class="icon__vk">
+								<svg class="icon icon--vk">
+									<use href="images/icons/icons.svg#icon-vk"></use>
+								</svg>
+							</i>
+						</a>
+						<a href="#" class="nav__link">
+							<i class="icon__facebook">
+								<svg class="icon icon--facebook">
+									<use href="images/icons/icons.svg#icon-facebook"></use>
+								</svg>
+							</i>
+						</a>
+						<a href="#" class="nav__link">
+							<i class="icon__instagram">
+								<svg class="icon icon--inst">
+									<use href="images/icons/icons.svg#icon-instagram"></use>
+								</svg>
+							</i>
+						</a>
+						<a href="#" class="nav__link">
+							<i class="icon__youtube">
+								<svg class="icon icon--youtube">
+									<use href="images/icons/icons.svg#icon-youtube"></use>
+								</svg>
+							</i>
+						</a>
+						<a href="#" class="nav__link">
+							<i class="icon__telegram">
+								<svg class="icon icon--telegram">
+									<use href="images/icons/icons.svg#icon-telegram"></use>
+								</svg>
+							</i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="banner">
+			<div class="container">
+				<!--<nav class="menu">
+						<div class="menu-nav__logo">учиться просто</div>
+						<ul class="menu-nav">
+							<li class="menu-nav__item">
+								<a href="#" class="menu-nav__link">Школы</a>
+							</li>
+							<li class="menu-nav__item">
+								<a href="#" class="menu-nav__link">Статьи</a>
+							</li>
+							<li class="menu-nav__item">
+								<a href="#" class="menu-nav__link">МАГАЗИН</a>
+							</li>
+							<li class="menu-nav__item">
+								<a href="#" class="menu-nav__link">КАК ВЫБРАТЬ ШКОЛУ?</a>
+							</li>
+							<li class="menu-nav__item">
+								<a href="#" class="menu-nav__link">КОНСУЛЬТАЦИЯ</a>
+							</li>
+						</ul>
+					</nav>-->
+				<div class="banner__content">
+					<div class="row">
+						<div class="col">
+							<div class="banner__title">
+								<span>Профессия</span>
+								<h1>
+									Frontend разработчик
+								</h1>
+								<p>
+									Записывайтесь, и за 6 месяцев станете востребованным <br>IT специалистом, со знанием новых технологий,
+									<br>с 5
+									крупными проектами в портфолио
+								</p>
+								<a href="#tg" class="banner__link">Записаться</a>
+							</div>
+						</div>
+						<div class="col">
+							<div class="banner__image">
+								<img src="images/it-help-desk.webp" alt="Студенты учатся новым профессиям">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="content content__about">
+			<div class="container">
+				<h2 class="content__title">
+					Чего ожидать от обучения?
+				</h2>
+				<div class="row">
+					<div class="col">
+						<div class="card__image">
+							<img src="images/icons/know-svgrepo-com.svg" alt="">
+						</div>
+						<!-- /.card__image -->
+						<div class="card__title">
+							Навыки
+						</div>
+						<div class="card__description">
+							Все необходимые знания <br> для старта в карьере.
+						</div>
+						<!--</div>-->
+					</div>
+					<div class="col">
+						<div class="card__image">
+							<img src="images/icons/portfolio-travel-svgrepo-com.svg" alt="">
+						</div>
+						<div class="card__title">
+							Портфолио
+						</div>
+						<!-- /.card__title -->
+						<div class="card__description">
+							5 крупных проектов, опыт которых, пригодится в работе и станет <br> крепким портфолио <br> для дальнейшего
+							трудоустройства.
+						</div>
+						<!-- /.card__description -->
+					</div>
+					<!-- /.col -->
+					<div class="col">
+						<div class="card__image">
+							<img src="images/icons/certificate-svgrepo-com.svg" alt="">
+						</div>
+						<div class="card__title">
+							Сертификат
+						</div>
+						<!-- /.card__title -->
+						<div class="card__description">
+							Сертификат, отражающиий <br> степень ваших знаний.
+						</div>
+						<!-- /.card__description -->
+					</div>
+					<!-- /.col -->
+					<div class="col">
+						<div class="card__image">
+							<img src="images/icons/teamwork-team-svgrepo-com.svg" alt="">
+						</div>
+						<div class="card__title">
+							Личные soft-skills
+						</div>
+						<!-- /.card__title -->
+						<div class="card__description">
+							Работа в команде, быстрая обучаемость, мотивация.
+						</div>
+						<!-- /.card__description -->
+					</div>
+					<!-- /.col -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.content__about -->
+		<section class="content content__technology">
+			<div class="container">
+				<h2 class="content__title">
+					Чему вы научитесь за 6 месяцев
+				</h2>
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<div class="card__image">
+
+								<img src="images/icons/code-svgrepo-com.svg" alt="">
+							</div>
+							<!-- /.card__image -->
+							<div class="card__title">
+								HTML & CSS
+							</div>
+							<div class="card__description">
+								Вы освоите следующие инструменты:
+								BEM
+								SASS
+								Анимации на CSS
+								FLEX & GRID.
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<div class="card__image">
+								<img src="images/icons/browser-html-svgrepo-com.svg" alt="">
+							</div>
+							<div class="card__title">
+								Адаптивная верстка
+							</div>
+							<!-- /.card__title -->
+							<div class="card__description">
+								Не важно откуда вы зайдете на свой сайт, с iPhone 4 или с большого монитора - ваш проект будет
+								отображаться безупречно.
+							</div>
+							<!-- /.card__description -->
+						</div>
+						<!-- /.card -->
+					</div>
+					<!-- /.col -->
+					<div class="col">
+						<div class="card">
+							<div class="card__image">
+								<img src="images/icons/git-svgrepo-com.svg" alt="">
+							</div>
+							<div class="card__title">
+								Командная разработка
+							</div>
+							<!-- /.card__title -->
+							<div class="card__description">
+								Ознакомитесь с GIT ( система контроля версий ).
+								Научитесь разрабатывать сайты в команде, заливать на GITHub Page
+							</div>
+							<!-- /.card__description -->
+						</div>
+						<!-- /.card -->
+					</div>
+					<!-- /.col -->
+					<div class="col">
+						<div class="card">
+							<div class="card__image">
+								<img src="images/icons/js-svgrepo-com.svg" alt="">
+							</div>
+							<div class="card__title">
+								JavaScript
+							</div>
+							<!-- /.card__title -->
+							<div class="card__description">
+								Полноценный язык программирования.
+								Вы научитесь работать с переменными, массивами, функциями, объектами.
+								Научитесь работать с DOM, делать интерактивные сайты.
+							</div>
+							<!-- /.card__description -->
+						</div>
+						<!-- /.card -->
+					</div>
+					<!-- /.col -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.content__technology -->
+		<section class="content content__format">
+			<div class="container">
+				<h2 class="content__title">
+					Как происходит обучение?
+				</h2>
+				<ul class="format-list program">
+					<li class="format-list__item">
+						<div class="program__card">
+							<div class="program__card-front">
+								<span>48&nbsp;онлайн</span>-уроков
+								<div class="program__card-icon">
+									<i>
+										<svg class="icon icon--webcam">
+											<use href="images/icons/icons.svg#icon-webcam"></use>
+										</svg>
+									</i>
+								</div>
+							</div>
+							<div class="program__card-back">
+								Уроки проходят по <span>zoom&nbsp;</span>в реальном времени.
+								Вы можете задавать вопросы, получать на них ответы.
+							</div>
+						</div>
+					</li>
+					<li class="format-list__item">
+						<div class="program__card">
+							<div class="program__card-front">
+								<span>Групповое </span>наставничество
+								<div class="program__card-icon">
+									<i>
+										<svg class="icon icon--people">
+											<use href="images/icons/icons.svg#icon-community"></use>
+										</svg>
+									</i>
+								</div>
+							</div>
+							<div class="program__card-back">
+								Чтобы наработать опыт в командной разработки наши
+								уроки проходят в группе из <span>8-10&nbsp;</span>человек.
+							</div>
+						</div>
+					</li>
+					<li class="format-list__item">
+						<div class="program__card">
+							<div class="program__card-front">
+								Поддержка <span>во время</span> обучения.
+								<div class="program__card-icon">
+									<i>
+										<svg class="icon icon--people">
+											<use href="images/icons/icons.svg#icon-support"></use>
+										</svg>
+									</i>
+								</div>
+							</div>
+							<div class="program__card-back">
+								В каждой группе <span>свой телеграм-чат&nbsp;</span> для вопросов, и обычного общения с сокурсниками
+							</div>
+						</div>
+					</li>
+					<li class="format-list__item">
+						<div class="program__card">
+							<div class="program__card-front">
+								Бонусы
+								<div class="program__card-icon">
+									<img src="images/icons/gift.svg" alt="">
+								</div>
+							</div>
+							<div class="program__card-back">
+								Лучшему выпускнику <span>дарится&nbsp;</span>монтитор Acer
+								<img src="images/monitor-acer.png" alt="Монитор">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.content__format -->
+		<section class="section section__clients">
+			<div class="container">
+				<form class="form" id="form">
+					<div class="mb-3">
+						<label class="form-label">Ваше имя</label>
+						<input type="text" name="name" class="form-input form-input--name" required placeholder="Имя">
+					</div>
+					<div class="mb-3">
+						<label class="form-label">Ваша почта</label>
+						<input type="email" class="form-input form-input--email" placeholder="test@gmail.com"
+							aria-describedby="emailHelp" name="email" required>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">Номер телeфона</label>
+						<input type="tel" class="form-input form-input--tel" placeholder="Введите ваш номер телефона"
+							aria-describedby="emailHelp" name="tel" required>
+					</div>
+					<div class="mb-3">
+						<label class="form-label">Телеграм</label>
+						<input type="text" class="form-input form-input--tg" id="exampleInputEmail1" placeholder="@niki_ellie_lone"
+							aria-describedby="emailHelp" name="telega" required>
+						<div id="emailHelp" class="form-text">Мы никогда не передаем данные третьим лицам</div>
+					</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" name="check" class="form-check-input" id="exampleCheck1" required>
+						<label class="form-check-label" for="exampleCheck1">Я согласен(на) с <a
+								href="offerta.html">офертой</a></label>
+					</div>
+					<button type="submit" class="btn btn-primary">Свяжитесь со мной</button>
+
+				</form>
+			</div>
+		</section>
+		<!-- /.section section__clients -->
+
+	</main>
+	<script src="js/app.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

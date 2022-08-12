@@ -1,0 +1,124 @@
+.card {
+	box-shadow: 0px 9px 20px 0px #0000000d;
+	padding: 20px;
+	height: 240px;
+	background-color: $white;
+	margin: 0 20px;
+	border-radius: 15px;
+	border: 3px dashed $bl-300;
+	// .card__image
+	&__image {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-self: center;
+	}
+	// .card__title
+	&__title {
+		font-family: $ms;
+		margin: 20px 0;
+		text-align: center;
+		font-size: 22px;
+	}
+	// .card__description
+	&__description {
+		font-family: $mm;
+		line-height: 22px;
+		color: $c300;
+		text-align: center;
+	}
+}
+.format-list {
+	display: flex;
+	justify-content: space-between;
+	// .format-list__item
+	&__item {
+		text-align: center;
+		width: 320px;
+		margin: 20px auto;
+		-webkit-perspective: 1200;
+		perspective: 1200;
+		-moz-transform: perspective(1200px);
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		&:hover .program__card {
+			-webkit-transform: rotateY(180deg);
+			-moz-transform: rotateY(180deg);
+			-ms-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
+}
+.program__card {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: 0.7s linear;
+	-moz-transition: 0.7s linear;
+	-o-transition: 0.7s linear;
+	transition: 0.7s linear;
+	span {
+		color: $bl-500;
+	}
+	// .program__card-icon
+	&-icon {
+		width: 100%;
+		height: 70%;
+		margin-top: 5px;
+		padding-top: 20px;
+		img {
+			width: 60%;
+			height: 60%;
+			margin-top: 20px;
+		}
+		.icon {
+			max-width: 50%;
+			max-height: 50%;
+			stroke: $c700;
+		}
+	}
+	&-front,
+	&-back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-sizing: border-box;
+		padding: 15px;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+		border-radius: 12px;
+	}
+	// .program__card-front
+	&-front {
+		z-index: 2;
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+		background-color: #f1f1f1;
+		font-size: 24px;
+		padding-top: 50px;
+	}
+	// .program__card-back
+	&-back {
+		-webkit-transform: rotateY(-180deg);
+		-moz-transform: rotateY(-180deg);
+		-ms-transform: rotateY(-180deg);
+		transform: rotateY(-180deg);
+		background-color: $white;
+		font-size: 18px;
+		
+		img {
+			height: 150px;
+			margin-top: 15px;
+		}
+	}
+}
