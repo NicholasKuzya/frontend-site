@@ -103,7 +103,7 @@
 									<br>с 5
 									крупными проектами в портфолио
 								</p>
-								<a href="#tg" class="banner__link">Записаться</a>
+								<a href="#form" class="banner__link">Записаться</a>
 							</div>
 						</div>
 						<div class="col col-12 col-sm-12 col-md-6 col-lg-6">
@@ -411,28 +411,28 @@
 			<div class="container">
 				<form class="form" id="form">
 					<div class="mb-3">
-						<label class="form-label">Ваше имя</label>
-						<input type="text" name="name" class="form-input form-input--name" required placeholder="Имя">
+						<label for="name" class="form-label">Ваше имя</label>
+						<input id="name" type="text" name="name" class="form-input form-input--name" required placeholder="Имя">
 					</div>
 					<div class="mb-3">
-						<label class="form-label">Ваша почта</label>
-						<input type="email" class="form-input form-input--email" placeholder="test@gmail.com"
+						<label for="email" class="form-label">Ваша почта</label>
+						<input id="email" type="email" class="form-input form-input--email" placeholder="test@gmail.com"
 							aria-describedby="emailHelp" name="email" required>
 					</div>
 					<div class="mb-3">
-						<label class="form-label">Номер телeфона</label>
-						<input type="tel" class="form-input form-input--tel" placeholder="Введите ваш номер телефона"
+						<label for="tel" class="form-label">Номер телeфона</label>
+						<input id="tel" type="tel" class="form-input form-input--tel" placeholder="Введите ваш номер телефона"
 							aria-describedby="emailHelp" name="tel" required>
 					</div>
 					<div class="mb-3">
-						<label class="form-label">Телеграм</label>
-						<input type="text" class="form-input form-input--tg" id="exampleInputEmail1" placeholder="@niki_ellie_lone"
+						<label for="tg" class="form-label">Телеграм</label>
+						<input id="tg" type="text" class="form-input form-input--tg" id="exampleInputEmail1" placeholder="@niki_ellie_lone"
 							aria-describedby="emailHelp" name="telega" required>
 						<div id="emailHelp" class="form-text">Мы никогда не передаем данные третьим лицам</div>
 					</div>
 					<div class="mb-3 form-check">
-						<input type="checkbox" name="check" class="form-check-input" id="exampleCheck1" required>
-						<label class="form-check-label" for="exampleCheck1">Я согласен(на) с <a
+						<input id="check" type="checkbox" name="check" class="form-check-input" id="exampleCheck1" required>
+						<label for="check" class="form-check-label" for="exampleCheck1">Я согласен(на) с <a
 								href="offerta.html">офертой</a></label>
 					</div>
 					<button type="submit" class="btn btn-primary">Свяжитесь со мной</button>
