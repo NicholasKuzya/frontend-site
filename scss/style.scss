@@ -55,7 +55,6 @@ span {
 		.card {
 			border-radius: 5px;
 			border: none;
-			height: 300px;
 		}
 	}
 	// .content__format
@@ -69,5 +68,70 @@ span {
 		line-height: 59px;
 		text-align: left;
 		margin: 90px 0;
+	}
+}
+.income {
+	.content__title {
+		margin: 30px 0;
+	}
+	// .income__text
+	&__text {
+		font-size: 22px;
+		color: $c300;
+		span {
+			color: $guide-color;
+		}
+	}
+	// .income__charts
+	&__charts {
+		margin-top: 10px;
+	}
+	// .income__description
+	&__description {
+		margin-bottom: 20px;
+		color: $c300;
+	}
+}
+.price {
+	font-size: 22px;
+	margin-bottom: 15px;
+	span {
+		font-style: italic;
+		color:$bl-300;
+	}
+}
+@media(max-width: 1000px) {
+	.card {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.content__title {
+		margin: 60px 0;
+	}
+}
+@media(max-width: 576px) {
+	.banner__title h1 {
+		font-size: 32px;
+	}
+	
+	.income__text {
+		font-size: 14px;
+	}
+	.content__title {
+		font-size: 26px;
+		margin: 20px 0;
+	}
+
+	.banner__link {
+		max-width: 100%;
+	}
+	.price {
+		font-size: 16px;
+	}
+	.income__description {
+		font-size: 12px;
+	}
+	.form .btn {
+		width: 100%;
 	}
 }
